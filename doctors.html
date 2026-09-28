@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Find a Doctor — Care Till Well</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="app">
+
+  <input type="checkbox" id="menuToggle" class="menu-checkbox">
+  <input type="radio" name="specfilter" id="filterAll" class="filter-all" checked>
+  <input type="radio" name="specfilter" id="filterPrimary" class="filter-primary">
+  <input type="radio" name="specfilter" id="filterCardio" class="filter-cardiology">
+  <input type="radio" name="specfilter" id="filterNeuro" class="filter-neurology">
+  <input type="radio" name="specfilter" id="filterPeds" class="filter-pediatrics">
+  <input type="radio" name="specfilter" id="filterDerm" class="filter-dermatology">
+
+  <header class="topbar">
+    <div class="brand">
+      <a href="home.html" class="brand-mark" style="text-decoration:none;">🌿</a>
+      <div class="brand-name">Find a Doctor</div>
+    </div>
+    <label class="icon-btn" for="menuToggle" aria-label="Open menu">☰</label>
+  </header>
+
+  <label class="menu-scrim" for="menuToggle"></label>
+  <nav class="menu-panel">
+    <label class="menu-close-label" for="menuToggle">✕</label>
+    <h3>Menu</h3>
+    <a href="home.html">🏠 Home</a>
+    <a href="doctors.html" class="active">🩺 Find a Doctor</a>
+    <a href="appointments.html">📅 My Appointments</a>
+    <a href="booking.html">➕ Book Appointment</a>
+    <a href="profile.html">👤 Profile</a>
+  </nav>
+
+  <section class="hero" style="padding-top:26px;">
+    <p style="margin-bottom:20px;">Browse licensed specialists and book a visit in a few taps.</p>
+  </section>
+
+  <form class="search-bar" action="doctors.html" method="get">
+    <span>🔍</span>
+    <input name="q" type="text" placeholder="Search by name or specialty…">
+    <button class="go" type="submit" aria-label="Search">🔍</button>
+  </form>
+
+  <div class="chip-row" style="margin-top:22px;">
+    <label class="chip" for="filterAll">All</label>
+    <label class="chip" for="filterPrimary">🧑‍⚕️ Primary Care</label>
+    <label class="chip" for="filterCardio">❤️ Cardiology</label>
+    <label class="chip" for="filterNeuro">🧠 Neurology</label>
+    <label class="chip" for="filterPeds">🧸 Pediatrics</label>
+    <label class="chip" for="filterDerm">🌿 Dermatology</label>
+  </div>
+
+  <!-- invisible :target anchors so links from the homepage (doctors.html#cardiology) auto-filter -->
+  <span id="primary-care" class="jump-primary"></span>
+  <span id="cardiology" class="jump-cardiology"></span>
+  <span id="neurology" class="jump-neurology"></span>
+  <span id="pediatrics" class="jump-pediatrics"></span>
+  <span id="dermatology" class="jump-dermatology"></span>
+
+  <h2 class="section-title">Our doctors</h2>
+  <div class="doctor-list">
+
+    <div class="card doctor-card cat-primary">
+      <div class="doctor-avatar">🩺</div>
+      <div class="doctor-info">
+        <h4>Dr. Amara Whitfield</h4>
+        <div class="spec">Primary Care</div>
+        <div class="meta">⭐ 4.9 · 12 yrs · Next: Today, 3:30 PM</div>
+      </div>
+      <a class="btn btn-primary" href="booking.html#amara-whitfield">Book</a>
+    </div>
+
+    <div class="card doctor-card cat-cardiology">
+      <div class="doctor-avatar">❤️</div>
+      <div class="doctor-info">
+        <h4>Dr. Elias Grant</h4>
+        <div class="spec">Cardiology</div>
+        <div class="meta">⭐ 4.8 · 15 yrs · Next: Tomorrow, 9:00 AM</div>
+      </div>
+      <a class="btn btn-primary" href="booking.html#elias-grant">Book</a>
+    </div>
+
+    <div class="card doctor-card cat-neurology">
+      <div class="doctor-avatar">🧠</div>
+      <div class="doctor-info">
+        <h4>Dr. Priya Nandan</h4>
+        <div class="spec">Neurology</div>
+        <div class="meta">⭐ 4.9 · 10 yrs · Next: Today, 5:00 PM</div>
+      </div>
+      <a class="btn btn-primary" href="booking.html#priya-nandan">Book</a>
+    </div>
+
+    <div class="card doctor-card cat-pediatrics">
+      <div class="doctor-avatar">🧸</div>
+      <div class="doctor-info">
+        <h4>Dr. Marcus Ibe</h4>
+        <div class="spec">Pediatrics</div>
+        <div class="meta">⭐ 4.7 · 8 yrs · Next: Fri, 11:15 AM</div>
+      </div>
+      <a class="btn btn-primary" href="booking.html#marcus-ibe">Book</a>
+    </div>
+
+    <div class="card doctor-card cat-dermatology">
+      <div class="doctor-avatar">🌿</div>
+      <div class="doctor-info">
+        <h4>Dr. Sofia Reyes</h4>
+        <div class="spec">Dermatology</div>
+        <div class="meta">⭐ 4.8 · 9 yrs · Next: Mon, 2:00 PM</div>
+      </div>
+      <a class="btn btn-primary" href="booking.html#sofia-reyes">Book</a>
+    </div>
+
+    <div class="card doctor-card cat-primary">
+      <div class="doctor-avatar">🩺</div>
+      <div class="doctor-info">
+        <h4>Dr. Tom Okafor</h4>
+        <div class="spec">Primary Care</div>
+        <div class="meta">⭐ 4.6 · 6 yrs · Next: Today, 4:45 PM</div>
+      </div>
+      <a class="btn btn-primary" href="booking.html#tom-okafor">Book</a>
+    </div>
+
+  </div>
+
+  <nav class="bottom-nav">
+    <a class="nav-item" href="home.html"><span class="nav-icon">🏠</span>Home</a>
+    <a class="nav-item active" href="doctors.html"><span class="nav-icon">🩺</span>Doctors</a>
+    <a class="nav-item" href="appointments.html"><span class="nav-icon">📅</span>Appointments</a>
+    <a class="nav-item" href="profile.html"><span class="nav-icon">👤</span>Profile</a>
+  </nav>
+
+</div>
+</body>
+</html>

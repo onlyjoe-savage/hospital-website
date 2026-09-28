@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book Appointment — Care Till Well</title>
+<link rel="stylesheet" href="assets/style.css">
+<style>
+  /* highlight the doctor jumped to from the Doctors page (#amara-whitfield etc.) */
+  .doctor-pick:target{ box-shadow: 0 0 0 3px var(--sage), var(--shadow-glow-lg); }
+</style>
+</head>
+<body>
+<div class="app">
+
+  <input type="checkbox" id="menuToggle" class="menu-checkbox">
+  <input type="radio" name="steps" id="step-doctor" class="tab-input" checked>
+  <input type="radio" name="steps" id="step-date" class="tab-input">
+  <input type="radio" name="steps" id="step-time" class="tab-input">
+  <input type="radio" name="steps" id="step-confirm" class="tab-input">
+
+  <header class="topbar">
+    <div class="brand">
+      <a href="home.html" class="brand-mark" style="text-decoration:none;">🌿</a>
+      <div class="brand-name">Book Appointment</div>
+    </div>
+    <label class="icon-btn" for="menuToggle" aria-label="Open menu">☰</label>
+  </header>
+
+  <label class="menu-scrim" for="menuToggle"></label>
+  <nav class="menu-panel">
+    <label class="menu-close-label" for="menuToggle">✕</label>
+    <h3>Menu</h3>
+    <a href="home.html">🏠 Home</a>
+    <a href="doctors.html">🩺 Find a Doctor</a>
+    <a href="appointments.html">📅 My Appointments</a>
+    <a href="booking.html" class="active">➕ Book Appointment</a>
+    <a href="profile.html">👤 Profile</a>
+  </nav>
+
+  <div class="stepper-nav">
+    <label for="step-doctor">Doctor</label>
+    <label for="step-date">Date</label>
+    <label for="step-time">Time</label>
+    <label for="step-confirm">Confirm</label>
+  </div>
+
+  <!-- STEP 1: DOCTOR -->
+  <div class="panel-doctor panel card">
+    <span class="field-label">Choose a doctor</span>
+
+    <div id="amara-whitfield" class="doctor-card doctor-pick">
+      <div class="doctor-avatar">🩺</div>
+      <div class="doctor-info"><h4>Dr. Amara Whitfield</h4><div class="spec">Primary Care</div></div>
+    </div>
+    <div id="elias-grant" class="doctor-card doctor-pick">
+      <div class="doctor-avatar">❤️</div>
+      <div class="doctor-info"><h4>Dr. Elias Grant</h4><div class="spec">Cardiology</div></div>
+    </div>
+    <div id="priya-nandan" class="doctor-card doctor-pick">
+      <div class="doctor-avatar">🧠</div>
+      <div class="doctor-info"><h4>Dr. Priya Nandan</h4><div class="spec">Neurology</div></div>
+    </div>
+    <div id="marcus-ibe" class="doctor-card doctor-pick">
+      <div class="doctor-avatar">🧸</div>
+      <div class="doctor-info"><h4>Dr. Marcus Ibe</h4><div class="spec">Pediatrics</div></div>
+    </div>
+    <div id="sofia-reyes" class="doctor-card doctor-pick">
+      <div class="doctor-avatar">🌿</div>
+      <div class="doctor-info"><h4>Dr. Sofia Reyes</h4><div class="spec">Dermatology</div></div>
+    </div>
+    <div id="tom-okafor" class="doctor-card doctor-pick">
+      <div class="doctor-avatar">🩺</div>
+      <div class="doctor-info"><h4>Dr. Tom Okafor</h4><div class="spec">Primary Care</div></div>
+    </div>
+
+    <label class="btn btn-primary btn-block" for="step-date" style="margin-top:8px;">Continue to date</label>
+  </div>
+
+  <!-- STEP 2: DATE -->
+  <div class="panel-date panel card">
+    <span class="field-label">Choose a date</span>
+    <div class="pick-grid">
+      <input type="radio" name="datePick" id="d1" class="pick-radio" checked><label class="pick-chip" for="d1">Mon<br>28</label>
+      <input type="radio" name="datePick" id="d2" class="pick-radio"><label class="pick-chip" for="d2">Tue<br>29</label>
+      <input type="radio" name="datePick" id="d3" class="pick-radio"><label class="pick-chip" for="d3">Wed<br>30</label>
+      <input type="radio" name="datePick" id="d4" class="pick-radio"><label class="pick-chip" for="d4">Thu<br>1</label>
+      <input type="radio" name="datePick" id="d5" class="pick-radio"><label class="pick-chip" for="d5">Fri<br>2</label>
+      <input type="radio" name="datePick" id="d6" class="pick-radio"><label class="pick-chip" for="d6">Sat<br>3</label>
+      <input type="radio" name="datePick" id="d7" class="pick-radio"><label class="pick-chip" for="d7">Sun<br>4</label>
+      <input type="radio" name="datePick" id="d8" class="pick-radio"><label class="pick-chip" for="d8">Mon<br>5</label>
+    </div>
+    <label class="btn btn-primary btn-block" for="step-time" style="margin-top:22px;">Continue to time</label>
+  </div>
+
+  <!-- STEP 3: TIME -->
+  <div class="panel-time panel card">
+    <span class="field-label">Choose a time</span>
+    <div class="pick-grid">
+      <input type="radio" name="timePick" id="t1" class="pick-radio" checked><label class="pick-chip" for="t1">9:00</label>
+      <input type="radio" name="timePick" id="t2" class="pick-radio"><label class="pick-chip" for="t2">10:00</label>
+      <input type="radio" name="timePick" id="t3" class="pick-radio"><label class="pick-chip" for="t3">11:30</label>
+      <input type="radio" name="timePick" id="t4" class="pick-radio"><label class="pick-chip" for="t4">1:00</label>
+      <input type="radio" name="timePick" id="t5" class="pick-radio"><label class="pick-chip" for="t5">2:30</label>
+      <input type="radio" name="timePick" id="t6" class="pick-radio"><label class="pick-chip" for="t6">3:45</label>
+      <input type="radio" name="timePick" id="t7" class="pick-radio"><label class="pick-chip" for="t7">5:00</label>
+      <input type="radio" name="timePick" id="t8" class="pick-radio"><label class="pick-chip" for="t8">6:15</label>
+    </div>
+    <label class="btn btn-primary btn-block" for="step-confirm" style="margin-top:22px;">Continue to confirm</label>
+  </div>
+
+  <!-- STEP 4: CONFIRM -->
+  <div class="panel-confirm panel card">
+    <span class="field-label">Review &amp; confirm</span>
+    <p style="color:var(--ink-soft); line-height:1.6; margin:0 0 20px;">
+      Double-check your doctor, date and time on the previous three tabs above, then confirm below.
+      We'll send a reminder before your visit.
+    </p>
+    <a class="btn btn-primary btn-block" href="appointments.html">✓ Confirm booking</a>
+  </div>
+
+  <nav class="bottom-nav">
+    <a class="nav-item" href="home.html"><span class="nav-icon">🏠</span>Home</a>
+    <a class="nav-item" href="doctors.html"><span class="nav-icon">🩺</span>Doctors</a>
+    <a class="nav-item" href="appointments.html"><span class="nav-icon">📅</span>Appointments</a>
+    <a class="nav-item" href="profile.html"><span class="nav-icon">👤</span>Profile</a>
+  </nav>
+
+</div>
+</body>
+</html>

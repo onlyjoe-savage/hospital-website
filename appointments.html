@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Appointments — Care Till Well</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="app">
+
+  <input type="checkbox" id="menuToggle" class="menu-checkbox">
+  <input type="radio" name="apptTabs" id="tab-upcoming" class="tab-input" checked>
+  <input type="radio" name="apptTabs" id="tab-past" class="tab-input">
+
+  <header class="topbar">
+    <div class="brand">
+      <a href="home.html" class="brand-mark" style="text-decoration:none;">🌿</a>
+      <div class="brand-name">My Appointments</div>
+    </div>
+    <label class="icon-btn" for="menuToggle" aria-label="Open menu">☰</label>
+  </header>
+
+  <label class="menu-scrim" for="menuToggle"></label>
+  <nav class="menu-panel">
+    <label class="menu-close-label" for="menuToggle">✕</label>
+    <h3>Menu</h3>
+    <a href="home.html">🏠 Home</a>
+    <a href="doctors.html">🩺 Find a Doctor</a>
+    <a href="appointments.html" class="active">📅 My Appointments</a>
+    <a href="booking.html">➕ Book Appointment</a>
+    <a href="profile.html">👤 Profile</a>
+  </nav>
+
+  <section class="hero" style="padding-top:26px;">
+    <p style="margin-bottom:20px;">Keep track of your visits, or cancel and rebook in seconds.</p>
+  </section>
+
+  <div class="tabs">
+    <label for="tab-upcoming" class="tab">Upcoming</label>
+    <label for="tab-past" class="tab">Past</label>
+  </div>
+
+  <!-- ================= UPCOMING ================= -->
+  <div class="panel-upcoming">
+
+    <input type="checkbox" id="cancel101" class="cancel-toggle">
+    <div class="card appt-card">
+      <div class="appt-live">
+        <div class="appt-top">
+          <div>
+            <h4>Dr. Amara Whitfield</h4>
+            <div class="spec" style="color:var(--sage);font-weight:700;font-size:0.9rem;">Primary Care</div>
+          </div>
+          <span class="appt-status status-upcoming">Upcoming</span>
+        </div>
+        <div class="appt-meta">📅 Sept 29, 2026 &nbsp;·&nbsp; 🕒 10:00 AM</div>
+        <div class="appt-actions">
+          <a class="btn btn-outline" href="booking.html#amara-whitfield">Reschedule</a>
+          <label class="btn btn-primary cancel-label" for="cancel101">Cancel</label>
+        </div>
+      </div>
+      <div class="appt-cancelled">
+        <div class="appt-top">
+          <h4>Dr. Amara Whitfield</h4>
+          <span class="appt-status status-past">Cancelled</span>
+        </div>
+        <div class="appt-meta">This visit has been cancelled.</div>
+        <label class="btn btn-outline btn-block" for="cancel101">Undo cancel</label>
+      </div>
+    </div>
+
+    <input type="checkbox" id="cancel102" class="cancel-toggle">
+    <div class="card appt-card">
+      <div class="appt-live">
+        <div class="appt-top">
+          <div>
+            <h4>Dr. Elias Grant</h4>
+            <div class="spec" style="color:var(--sage);font-weight:700;font-size:0.9rem;">Cardiology</div>
+          </div>
+          <span class="appt-status status-upcoming">Upcoming</span>
+        </div>
+        <div class="appt-meta">📅 Oct 3, 2026 &nbsp;·&nbsp; 🕒 2:30 PM</div>
+        <div class="appt-actions">
+          <a class="btn btn-outline" href="booking.html#elias-grant">Reschedule</a>
+          <label class="btn btn-primary cancel-label" for="cancel102">Cancel</label>
+        </div>
+      </div>
+      <div class="appt-cancelled">
+        <div class="appt-top">
+          <h4>Dr. Elias Grant</h4>
+          <span class="appt-status status-past">Cancelled</span>
+        </div>
+        <div class="appt-meta">This visit has been cancelled.</div>
+        <label class="btn btn-outline btn-block" for="cancel102">Undo cancel</label>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ================= PAST ================= -->
+  <div class="panel-past">
+
+    <div class="card appt-card">
+      <div class="appt-top">
+        <div>
+          <h4>Dr. Sofia Reyes</h4>
+          <div class="spec" style="color:var(--sage);font-weight:700;font-size:0.9rem;">Dermatology</div>
+        </div>
+        <span class="appt-status status-past">Completed</span>
+      </div>
+      <div class="appt-meta">📅 Aug 14, 2026 &nbsp;·&nbsp; 🕒 11:00 AM</div>
+      <div class="appt-actions">
+        <a class="btn btn-outline btn-block" href="booking.html#sofia-reyes">Book again</a>
+      </div>
+    </div>
+
+    <div class="card appt-card">
+      <div class="appt-top">
+        <div>
+          <h4>Dr. Tom Okafor</h4>
+          <div class="spec" style="color:var(--sage);font-weight:700;font-size:0.9rem;">Primary Care</div>
+        </div>
+        <span class="appt-status status-past">Completed</span>
+      </div>
+      <div class="appt-meta">📅 Jul 2, 2026 &nbsp;·&nbsp; 🕒 4:00 PM</div>
+      <div class="appt-actions">
+        <a class="btn btn-outline btn-block" href="booking.html#tom-okafor">Book again</a>
+      </div>
+    </div>
+
+  </div>
+
+  <a class="fab" href="booking.html" aria-label="Book new appointment">+</a>
+
+  <nav class="bottom-nav">
+    <a class="nav-item" href="home.html"><span class="nav-icon">🏠</span>Home</a>
+    <a class="nav-item" href="doctors.html"><span class="nav-icon">🩺</span>Doctors</a>
+    <a class="nav-item active" href="appointments.html"><span class="nav-icon">📅</span>Appointments</a>
+    <a class="nav-item" href="profile.html"><span class="nav-icon">👤</span>Profile</a>
+  </nav>
+
+</div>
+</body>
+</html>

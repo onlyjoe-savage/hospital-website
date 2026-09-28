@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Profile — Care Till Well</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="app">
+
+  <input type="checkbox" id="menuToggle" class="menu-checkbox">
+  <input type="checkbox" id="editToggle" class="edit-toggle">
+  <input type="checkbox" id="logoutModal" class="modal-toggle">
+
+  <header class="topbar">
+    <div class="brand">
+      <a href="home.html" class="brand-mark" style="text-decoration:none;">🌿</a>
+      <div class="brand-name">Profile</div>
+    </div>
+    <label class="icon-btn" for="menuToggle" aria-label="Open menu">☰</label>
+  </header>
+
+  <label class="menu-scrim" for="menuToggle"></label>
+  <nav class="menu-panel">
+    <label class="menu-close-label" for="menuToggle">✕</label>
+    <h3>Menu</h3>
+    <a href="home.html">🏠 Home</a>
+    <a href="doctors.html">🩺 Find a Doctor</a>
+    <a href="appointments.html">📅 My Appointments</a>
+    <a href="booking.html">➕ Book Appointment</a>
+    <a href="profile.html" class="active">👤 Profile</a>
+  </nav>
+
+  <div class="profile-head">
+    <div class="avatar-lg">🧑</div>
+    <h2>Jordan Blake</h2>
+    <p>Member since Jan 2024</p>
+  </div>
+
+  <div class="card info-list">
+    <div class="info-row">
+      <label>Full name</label>
+      <span class="value static-value">Jordan Blake</span>
+      <input class="value editable" type="text" value="Jordan Blake">
+    </div>
+    <div class="info-row">
+      <label>Email</label>
+      <span class="value static-value">jordan.blake@email.com</span>
+      <input class="value editable" type="email" value="jordan.blake@email.com">
+    </div>
+    <div class="info-row">
+      <label>Phone</label>
+      <span class="value static-value">(555) 012-3344</span>
+      <input class="value editable" type="tel" value="(555) 012-3344">
+    </div>
+    <div class="info-row">
+      <label>Insurance provider</label>
+      <span class="value static-value">Care Till Well Plan</span>
+      <input class="value editable" type="text" value="Care Till Well Plan">
+    </div>
+  </div>
+
+  <div style="margin:20px 26px;">
+    <label class="btn btn-outline btn-block edit-label" for="editToggle">✏️ <span class="edit-label-text"></span></label>
+  </div>
+
+  <h2 class="section-title">Preferences</h2>
+  <div class="card info-list">
+    <div class="switch-row">
+      <span>Appointment reminders</span>
+      <label class="switch">
+        <input type="checkbox" checked>
+        <span class="slider-toggle"></span>
+      </label>
+    </div>
+    <div class="switch-row">
+      <span>Promotional emails</span>
+      <label class="switch">
+        <input type="checkbox">
+        <span class="slider-toggle"></span>
+      </label>
+    </div>
+    <div class="switch-row">
+      <span>SMS visit reminders</span>
+      <label class="switch">
+        <input type="checkbox" checked>
+        <span class="slider-toggle"></span>
+      </label>
+    </div>
+  </div>
+
+  <div style="margin:24px 26px 10px;">
+    <label class="btn btn-outline btn-block" for="logoutModal" style="border-color:var(--danger);color:var(--danger);">🚪 Log out</label>
+  </div>
+
+  <nav class="bottom-nav">
+    <a class="nav-item" href="home.html"><span class="nav-icon">🏠</span>Home</a>
+    <a class="nav-item" href="doctors.html"><span class="nav-icon">🩺</span>Doctors</a>
+    <a class="nav-item" href="appointments.html"><span class="nav-icon">📅</span>Appointments</a>
+    <a class="nav-item active" href="profile.html"><span class="nav-icon">👤</span>Profile</a>
+  </nav>
+
+  <div class="modal-scrim">
+    <div class="modal-sheet">
+      <h3>Log out of Care Till Well?</h3>
+      <p>You'll need to sign back in to view your appointments and profile.</p>
+      <div class="modal-actions">
+        <label class="btn btn-outline btn-block modal-close-label" for="logoutModal">Stay logged in</label>
+        <label class="btn btn-primary btn-block modal-close-label" for="logoutModal">Log out</label>
+      </div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
