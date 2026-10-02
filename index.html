@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Care Till Well — Compassionate Care</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<div class="app">
+
+  <input type="checkbox" id="menuToggle" class="menu-checkbox">
+  <input type="checkbox" id="modalEmergency" class="modal-toggle">
+
+  <header class="topbar">
+    <div class="brand">
+      <div class="brand-mark">🌿</div>
+      <div class="brand-name">Care Till Well</div>
+    </div>
+    <label class="icon-btn" for="menuToggle" aria-label="Open menu">☰</label>
+  </header>
+
+  <label class="menu-scrim" for="menuToggle"></label>
+  <nav class="menu-panel">
+    <label class="menu-close-label" for="menuToggle">✕</label>
+    <h3>Menu</h3>
+    <a href="home.html" class="active">🏠 Home</a>
+    <a href="doctors.html">🩺 Find a Doctor</a>
+    <a href="appointments.html">📅 My Appointments</a>
+    <a href="booking.html">➕ Book Appointment</a>
+    <a href="profile.html">👤 Profile</a>
+  </nav>
+
+  <section class="hero">
+    <h1>Compassionate care when you need it most</h1>
+    <p>Trusted healthcare, available 24/7. Find doctors, book appointments, or get emergency care — support when you need it most.</p>
+  </section>
+
+  <form class="search-bar" action="doctors.html" method="get">
+    <span>🔍</span>
+    <input name="q" type="text" placeholder="Search for doctor, specialty, or condition…">
+    <button class="go" type="submit" aria-label="Search">🔍</button>
+  </form>
+
+  <div class="quick-grid">
+    <a class="tile" href="booking.html">
+      <span class="tile-icon">🗓️</span>
+      <strong>Book Appointment</strong>
+    </a>
+    <label class="tile" for="modalEmergency">
+      <span class="tile-icon">📞</span>
+      <strong>Emergency · 24/7</strong>
+      <span class="sub">Call now · Immediate help</span>
+    </label>
+  </div>
+
+  <div class="hotline-strip">📞 Emergency Hotline: 1-800-435-2911 · Available 24/7</div>
+
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+      <span class="ticker-item">✅ Licensed Experts</span>
+      <span class="ticker-item">⏱️ Same-Day Visits</span>
+      <span class="ticker-item">🔒 Secure &amp; Private</span>
+      <span class="ticker-item">📞 24/7 Emergency Care</span>
+      <span class="ticker-item">🌿 Care Till Well</span>
+      <span class="ticker-item">✅ Licensed Experts</span>
+      <span class="ticker-item">⏱️ Same-Day Visits</span>
+      <span class="ticker-item">🔒 Secure &amp; Private</span>
+      <span class="ticker-item">📞 24/7 Emergency Care</span>
+      <span class="ticker-item">🌿 Care Till Well</span>
+    </div>
+  </div>
+
+  <h2 class="section-title">Find the right doctor</h2>
+  <div class="chip-row">
+    <a class="chip" href="doctors.html#primary-care">🧑‍⚕️ Primary Care</a>
+    <a class="chip" href="doctors.html#cardiology">❤️ Cardiology</a>
+    <a class="chip" href="doctors.html#neurology">🧠 Neurology</a>
+    <a class="chip" href="doctors.html#pediatrics">🧸 Pediatrics</a>
+    <a class="chip" href="doctors.html#dermatology">🌿 Dermatology</a>
+  </div>
+
+  <div class="card why-card">
+    <h3>Why choose Care Till Well</h3>
+    <div class="why-grid">
+      <div class="why-item">
+        <div class="why-badge">✅</div>
+        <p>Licensed Experts</p>
+      </div>
+      <div class="why-item">
+        <div class="why-badge">⏱️</div>
+        <p>Same-Day Visits</p>
+      </div>
+      <div class="why-item">
+        <div class="why-badge">🔒</div>
+        <p>Secure &amp; Private</p>
+      </div>
+    </div>
+  </div>
+
+  <nav class="bottom-nav">
+    <a class="nav-item active" href="home.html"><span class="nav-icon">🏠</span>Home</a>
+    <a class="nav-item" href="doctors.html"><span class="nav-icon">🩺</span>Doctors</a>
+    <a class="nav-item" href="appointments.html"><span class="nav-icon">📅</span>Appointments</a>
+    <a class="nav-item" href="profile.html"><span class="nav-icon">👤</span>Profile</a>
+  </nav>
+
+  <div class="modal-scrim">
+    <div class="modal-sheet">
+      <h3>📞 Call emergency line?</h3>
+      <p>You're about to call the Care Till Well 24/7 emergency hotline (1-800-435-2911).</p>
+      <div class="modal-actions">
+        <label class="btn btn-outline btn-block modal-close-label" for="modalEmergency">Cancel</label>
+        <a class="btn btn-primary btn-block" href="tel:18004352911">Call now</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
