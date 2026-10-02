@@ -8,6 +8,18 @@
 </head>
 <body>
 
+<!-- Splash screen: pure CSS. Sits on top for exactly 5s, then fades itself
+     out via @keyframes (assets/style.css, .splash / splash-out) and reveals
+     the homepage underneath. No JavaScript, no redirect -- so it always
+     renders, in any browser or preview pane. -->
+<div class="splash" aria-hidden="true">
+  <span class="bubble b1"></span><span class="bubble b2"></span><span class="bubble b3"></span>
+  <span class="bubble b4"></span><span class="bubble b5"></span><span class="bubble b6"></span>
+  <span class="bubble b7"></span><span class="bubble b8"></span><span class="bubble b9"></span>
+  <span class="bubble b10"></span><span class="bubble b11"></span><span class="bubble b12"></span>
+  <h1 class="splash-title">Care Till Well</h1>
+</div>
+
 <div class="app">
 
   <input type="checkbox" id="menuToggle" class="menu-checkbox">
